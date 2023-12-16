@@ -1,6 +1,6 @@
 # Laravel Ollama boilerplate
 This project contains a Laravel boilerplate with [Cloudstudio Ollama-Laravel](https://github.com/cloudstudio/ollama-laravel) 
-and [Spatie Laravel-markdown](https://spatie.be/index.php/docs/laravel-markdown/v1/introduction) packages preinstalled to use Ollama LLM Models Locally with Laravel.
+and [Spatie Laravel-markdown](https://spatie.be/index.php/docs/laravel-markdown/v1/introduction) packages preinstalled to use Ollama LLM Models locally with Laravel.
 
 
 ![](public/screenshot.png)
