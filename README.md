@@ -3,7 +3,7 @@ This project contains a Laravel boilerplate with [Cloudstudio Ollama-Laravel](ht
 and [Spatie Laravel-markdown](https://spatie.be/index.php/docs/laravel-markdown/v1/introduction) packages preinstalled to use Ollama LLM Models Locally with Laravel.
 
 
-![](public/demo.gif)
+![](public/screenshot.png)
 
 ## What is what
 
@@ -18,9 +18,7 @@ and [Spatie Laravel-markdown](https://spatie.be/index.php/docs/laravel-markdown/
 - You should clone this repo & run Laravel locally using Sail 
 - I tested it on Apple Silicon M1 Max running Sonoma 14.1.2 
 
-## Screenshot
 
-![](public/screenshot.png)
 
 
 <hr>
