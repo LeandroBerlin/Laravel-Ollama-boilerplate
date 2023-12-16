@@ -17,3 +17,11 @@ code {
     background-color: #2d3748;
     padding: 0.1rem;
 }
+
+li {
+    margin: 1rem 0;
+}
+
+.text-xl{
+    font-size: 1.5em;
+}
