@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+pre {
+    margin: 1rem 0.5rem;
+    padding: 1rem;
+    white-space: pre-wrap;
+}
+
+pre code {
+    background-color: #24292e;
+}
+
+code {
+    background-color: #2d3748;
+    padding: 0.1rem;
+}
