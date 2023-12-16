@@ -18,7 +18,7 @@ class OllamaController extends Controller
     public function answer(Request $request): View
     {
 
-            $promptText = $request->input('promptText');
+        $promptText = $request->input('promptText');
 
         try {
             $response = Ollama::prompt($promptText)
@@ -26,15 +26,17 @@ class OllamaController extends Controller
                 ->options(['temperature' => 0.8])
                 ->stream(false)
                 ->ask();
+
+            return view('prompt')
+                ->with('promptText', $promptText)
+                ->with('response', $response);
+
         }catch (\Illuminate\Http\Client\ConnectionException $e) {
             return view('prompt')
                 ->with('errorMessage', $e->getMessage()
                 );
         }
 
-        return view('prompt')
-            ->with('promptText', $promptText)
-            ->with('response', $response);
     }
 
 }
