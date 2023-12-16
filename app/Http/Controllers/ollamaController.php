@@ -19,11 +19,18 @@ class ollamaController extends Controller
     {
 
             $promptText = $request->input('promptText');
+
+        try {
             $response = Ollama::prompt($promptText)
                 ->model('llama2')
                 ->options(['temperature' => 0.8])
                 ->stream(false)
                 ->ask();
+        }catch (\Illuminate\Http\Client\ConnectionException $e) {
+            return view('prompt')
+                ->with('errorMessage', $e->getMessage()
+                );
+        }
 
         return view('prompt')
             ->with('promptText', $promptText)
