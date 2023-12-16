@@ -6,7 +6,7 @@ use Illuminate\View\View;
 use Illuminate\Http\Request;
 use Cloudstudio\Ollama\Facades\Ollama;
 
-class ollamaController extends Controller
+class OllamaController extends Controller
 {
 
     public function prompt(Request $request): View

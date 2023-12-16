@@ -16,9 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get(
-    '/', [ollamaController::class, 'prompt']
+    '/', [OllamaController::class, 'prompt']
 );
 
 Route::post(
-    '/', [ollamaController::class, 'answer']
+    '/', [OllamaController::class, 'answer']
 );
