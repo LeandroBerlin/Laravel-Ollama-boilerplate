@@ -18,6 +18,23 @@ and [Spatie Laravel-markdown](https://spatie.be/index.php/docs/laravel-markdown/
 - You should clone this repo & run Laravel locally using Sail 
 - I tested it on Apple Silicon M1 Max running Sonoma 14.1.2 
 
+## Setup
+1. Install [Ollama](https://ollama.ai/)  
+2. Clone this repository  
+`git clone git@github.com:LeandroBerlin/Laravel-Ollama-boilerplate.git`  
+3. Move to project folder  
+`cd Laravel-Ollama-boilerplate`  
+4. Install dependencies  
+`composer install`  
+5. Configure environment  
+`cp .env.example .env`  
+5. Create your App Key  
+`php artisan key:generate`  
+6. Install frontend dependencies  
+`npm install`  
+7. Run Vite  
+`npm run dev`  
+8. Go to localhost:8000
 
 
 
