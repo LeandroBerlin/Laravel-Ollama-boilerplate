@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 
+p{
+    margin-bottom: 1.5rem}
+
 pre {
     margin: 1rem 0.5rem;
     padding: 1rem;
@@ -15,7 +18,8 @@ pre code {
 
 code {
     background-color: #2d3748;
-    padding: 0.1rem;
+    padding: 0 0.3rem;
+    color: #fff;
 }
 
 li {
@@ -24,4 +28,10 @@ li {
 
 .text-xl{
     font-size: 1.5em;
+}
+
+ol, ul, menu {
+    display: block;
+    list-style-type: disc;
+    margin: 0 1rem;
 }
